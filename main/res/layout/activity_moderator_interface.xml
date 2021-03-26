@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:background="@drawable/ciel"
+    android:theme="@style/ThemeOverlay.Ced_Forum.FullscreenContainer"
+    tools:context="model.ModeratorInterface">
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@+id/textView"
+        android:useDefaultMargins="false"
+        android:alignmentMode="alignBounds"
+        android:columnCount="4">
+
+
+        <TextView
+            android:text="FORUM"
+            android:textSize="50sp"
+            android:layout_columnSpan="4"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+
+            android:text="Nom du forum ? :"
+            android:layout_gravity="left"/>
+
+        <EditText
+            android:id="@+id/name_forum_txt"
+             android:ems="5"/>
+
+
+        <TextView
+            android:text="Créer"
+            android:layout_column="0"
+            android:layout_gravity="left"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_columnSpan="2">
+            <RadioButton
+                android:id="@+id/moderateur_radio"
+                android:text="Modérateur"
+                android:checked="false"
+                android:layout_column="1"/>
+        <RadioButton
+            android:id="@+id/abonne_radio"
+            android:text="Abonné"
+            android:checked="true"
+            android:layout_column="2"/>
+        </RadioGroup>
+        <TextView
+            android:text="nom"
+            android:layout_column="0"
+            android:layout_gravity="left"
+            />
+
+        <EditText
+            android:id="@+id/name_txt"
+            android:ems="5"
+            android:maxLines="4"
+            android:minLines="2"
+            />
+        <TextView
+            android:text="prénom"
+            android:layout_gravity="left"
+            />
+
+        <EditText
+            android:id="@+id/surname_txt"
+            android:ems="5"
+            android:maxLines="4"
+            android:minLines="2"
+            />
+        <TextView
+            android:text="age"
+            android:layout_gravity="left"
+            />
+
+        <EditText
+            android:id="@+id/age_txt"
+            android:ems="5"
+            android:maxLines="20"
+            android:minLines="2"
+            />
+
+        <Button
+            android:id="@+id/enreg_button"
+            android:text="Enregistrer"
+            android:layout_column="0"
+            android:layout_columnSpan="4"
+            android:layout_gravity="bottom"
+            />
+
+
+    </GridLayout>
+
+
+
+</LinearLayout>
