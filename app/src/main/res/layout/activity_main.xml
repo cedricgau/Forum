@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ciel"
+    android:theme="@style/ThemeOverlay.Ced_Forum.FullscreenContainer"
+    tools:context="cedric.gautier.ced_forum.activity_main">
+
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@+id/textView"
+        android:alignmentMode="alignBounds"
+        android:columnCount="4"
+        android:useDefaultMargins="false">
+
+
+        <Button
+            android:id="@+id/moderator_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:keepScreenOn="true"
+            android:text="MODERATEUR"
+            android:textColor="?attr/fullscreenTextColor"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/abonne_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_columnSpan="4"
+            android:gravity="center"
+            android:keepScreenOn="true"
+            android:text="ABONNE"
+            android:textColor="?attr/fullscreenTextColor"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            />
+        <EditText android:id="@+id/name_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Votre nom"/>
+
+
+    </GridLayout>
+</FrameLayout>
