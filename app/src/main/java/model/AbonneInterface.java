@@ -12,11 +12,11 @@ import android.view.WindowManager;
 import android.widget.TextView;
 
 import cedric.gautier.ced_forum.R;
-import dao.DefaultData;
+import dao.DatabaseManager;
 
 
 public class AbonneInterface extends Activity {
-
+    private DatabaseManager databaseManager;
     private TextView abonne;
     private RecyclerView mRecyclerView;
     private String s[],s1[],s2[],s3[];
@@ -36,9 +36,13 @@ public class AbonneInterface extends Activity {
         abonne = (TextView) findViewById(R.id.abonne_txt);
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler);
 
+        databaseManager = new DatabaseManager( this );
+        databaseManager.idGeneric();
+        databaseManager.close();
+
         //création d'un modérateur
-       Moderator cedric = new Moderator("gautier","cedric",47);
-        s=cedric.afficherLesNouvelles();
+       //Moderator cedric = new Moderator("gautier","cedric",47);
+       // s=cedric.afficherLesNouvelles();
         s1= new String[s.length];
         s2= new String[s.length];
         s3= new String[s.length];

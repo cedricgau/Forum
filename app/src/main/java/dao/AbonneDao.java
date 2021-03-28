@@ -1,29 +1,16 @@
 package dao;
 
-import androidx.lifecycle.LiveData;
-import androidx.room.Dao;
-import androidx.room.Insert;
-import androidx.room.Query;
-import androidx.room.Update;
+import android.os.Build;
 
-import java.util.List;
+import androidx.annotation.RequiresApi;
 
-import model.Abonne;
+import model.Nouvelle;
 
 /**
- * Created by Cedric GAUTIER - AFPA TP's on 26/03/2021.
+ * Created by Cedric GAUTIER - AFPA TP's on 28/03/2021.
  */
-@Dao
-public interface AbonneDao {
-    //@Query("SELECT * FROM Abonne WHERE idAbonne = :idAbonne")
-    //LiveData<List<Abonne>> getItems(int idAbonne);
+@RequiresApi(api = Build.VERSION_CODES.O)
+public class AbonneDao {
 
-   // @Insert
-    //long insertItem(Abonne item);
 
-    //@Update
-    //int updateItem(Abonne abonne);
-
-   // @Query("DELETE FROM Abonne WHERE idAbonne = :idAbonne")
-    //int deleteItem(int idAbonne);
 }

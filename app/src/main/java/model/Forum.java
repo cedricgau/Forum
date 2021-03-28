@@ -8,7 +8,6 @@ import android.os.Build;
 import androidx.annotation.RequiresApi;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
-import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 
 import java.time.LocalDate;
@@ -16,8 +15,6 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
-import dao.DefaultData;
 
 
 @RequiresApi(api = Build.VERSION_CODES.O)
